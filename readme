@@ -33,6 +33,11 @@ bun run tsByDefault.ts
 
 # Ejecutar cualquier archivo .ts
 bun run <nombre-archivo>.ts
+
+```
+## Testing 
+```bash
+bun test
 ```
 
 ### Debugging

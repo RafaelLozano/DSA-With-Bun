@@ -2,9 +2,14 @@
     Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
     You may assume that each input would have exactly one solution, and you may not use the same element twice.
     You can return the answer in any order.
+
+    When to use:
+    - When the array is sorted.
+    - When need to compare, sum or difference of two elements.
+
 */
 
-const twoPointersAlgorithm = (nums: number[], target: number) => {
+export const findPairTarget = (nums: number[], target: number) => {
     let left:number = 0;
     let right:number = nums.length - 1;
 
@@ -21,9 +26,3 @@ const twoPointersAlgorithm = (nums: number[], target: number) => {
 
     return [];
 }
-
-console.log(twoPointersAlgorithm([2,7,11,15], 9));
-console.log(twoPointersAlgorithm([3,2,4], 6));
-console.log(twoPointersAlgorithm([3,3], 6));
-
-console.log(twoPointersAlgorithm([2,5,5,11], 10));
