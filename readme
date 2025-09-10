@@ -1,0 +1,101 @@
+# Ejemplos con Bun 🚀
+
+Este repositorio contiene ejemplos de algoritmos y código TypeScript utilizando **Bun** como runtime de JavaScript.
+
+## 📋 Contenido
+
+### Algoritmos Implementados
+
+- **Two Pointers Algorithm** (`tsByDefault.ts`): Implementación del algoritmo de dos punteros para encontrar dos números en un array que sumen un valor objetivo.
+
+## 🛠️ Requisitos
+
+- [Bun](https://bun.sh/) instalado en tu sistema
+
+## 🚀 Instalación
+
+```bash
+# Clona el repositorio
+git clone <url-del-repo>
+cd bun-examples
+
+# Instala Bun si no lo tienes
+curl -fsSL https://bun.sh/install | bash
+```
+
+## ▶️ Ejecución
+
+### Ejecutar archivos TypeScript
+
+```bash
+# Ejecutar un archivo específico
+bun run tsByDefault.ts
+
+# Ejecutar cualquier archivo .ts
+bun run <nombre-archivo>.ts
+```
+
+### Debugging
+
+Puedes debuggear usando Bun con el comando:
+
+```bash
+bun --debug <archivo>.ts
+```
+
+#### Debugging en VS Code
+
+El proyecto incluye configuración de debugging para VS Code. Simplemente:
+
+1. Abre el archivo que quieres debuggear
+2. Presiona `F5` o ve a `Run and Debug`
+3. Selecciona "Debug TS with Bun (current file)"
+
+La configuración está en `.vscode/launch.json` y permite debuggear el archivo actualmente abierto.
+
+## 📁 Estructura del Proyecto
+
+```
+bun-examples/
+├── readme                    # Este archivo
+├── tsByDefault.ts           # Algoritmo Two Pointers
+└── .vscode/
+    └── launch.json          # Configuración de debugging para VS Code
+```
+
+## 🧮 Algoritmos
+
+### Two Pointers Algorithm
+
+**Problema**: Dados un array de enteros y un número objetivo, devolver los índices de los dos números que sumen el objetivo.
+
+**Complejidad**: 
+- Tiempo: O(n)
+- Espacio: O(1)
+
+**Ejemplo de uso**:
+```typescript
+twoPointersAlgorithm([2,7,11,15], 9); // [0, 1]
+twoPointersAlgorithm([3,2,4], 6);     // [1, 2]
+```
+
+## 🤝 Contribuir
+
+1. Fork el proyecto
+2. Crea tu rama de feature (`git checkout -b feature/nuevo-algoritmo`)
+3. Commit tus cambios (`git commit -m 'Añadir nuevo algoritmo'`)
+4. Push a la rama (`git push origin feature/nuevo-algoritmo`)
+5. Abre un Pull Request
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
+## 🔗 Enlaces Útiles
+
+- [Documentación de Bun](https://bun.sh/docs)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+
+---
+
+¿Tienes algún algoritmo interesante que te gustaría ver implementado? ¡Abre un issue! 🎯
