@@ -29,10 +29,7 @@ curl -fsSL https://bun.sh/install | bash
 
 ```bash
 # Ejecutar un archivo específico
-bun run tsByDefault.ts
-
-# Ejecutar cualquier archivo .ts
-bun run <nombre-archivo>.ts
+bun run fileName.ts
 
 ```
 ## Testing 
@@ -58,31 +55,10 @@ El proyecto incluye configuración de debugging para VS Code. Simplemente:
 
 La configuración está en `.vscode/launch.json` y permite debuggear el archivo actualmente abierto.
 
-## 📁 Estructura del Proyecto
-
-```
-bun-examples/
-├── readme                    # Este archivo
-├── tsByDefault.ts           # Algoritmo Two Pointers
-└── .vscode/
-    └── launch.json          # Configuración de debugging para VS Code
-```
-
 ## 🧮 Algoritmos
+- Two Pointers Algorithm
+- FastAndSlowPointers
 
-### Two Pointers Algorithm
-
-**Problema**: Dados un array de enteros y un número objetivo, devolver los índices de los dos números que sumen el objetivo.
-
-**Complejidad**: 
-- Tiempo: O(n)
-- Espacio: O(1)
-
-**Ejemplo de uso**:
-```typescript
-twoPointersAlgorithm([2,7,11,15], 9); // [0, 1]
-twoPointersAlgorithm([3,2,4], 6);     // [1, 2]
-```
 
 ## 🤝 Contribuir
 
