@@ -1,0 +1,3 @@
+# Trie
+
+Árbol de prefijos.

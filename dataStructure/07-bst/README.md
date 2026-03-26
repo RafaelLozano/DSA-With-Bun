@@ -1,0 +1,3 @@
+# BST
+
+Left < Root < Right.
